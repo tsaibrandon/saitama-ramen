@@ -3754,6 +3754,17 @@ body.is-preload #banner>.inner {
 	border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 }
 
+/* section title */
+
+.sectionTitle {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sectionTitle div {
+	width: 900px;
+}
+
 /* Location */
 
 #two .inner {
