@@ -1,257 +1,135 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Ramen Saitama</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saitama Ramen</title>
 </head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>Saitama Ramen</h1></a>
+        </div>
+        <nav>
+             <!-- <button>☰</button> -->
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Make a Reservation!</a></li>
+              </ul>
+        </nav>
+    </header>
 
-<body class="is-preload">
+    <section class="banner">
+        <div class="section-container">
+            <h1>Saitama Ramen</h1>
+            <p>Crafting only the best since 2001.</p>
+            <a href="about.html" class="btn">Our Story</a>
+        </div>
+    </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <section class="locations">
+        <h1>Order Online Now!</h1>
+        <h2>Choose Your Location</h2>
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<a href="index.html" class="logo"><strong>Ramen Saitama</strong></a>
-			<nav>
-				<a href="#menu"></a>
-			</nav>
-		</header>
+        <div class="location-container">
+            <div class="location-card">
+                <h3>Little Tokyo</h3>
+                <p>123 Tokyo St.</p>
+                <p>Los Angeles, CA</p>
+                <a href="menu.html" class="btn">Order</a>
+            </div>
+            <div class="location-card">
+                <h3>Arcadia</h3>
+                <p>123 Arcadia St.</p>
+                <p>Arcadia, CA</p>
+                <a href="menu.html" class="btn">Order</a>
+            </div>
+            <div class="location-card">
+                <h3>Las Vegas</h3>
+                <p>123 Vegas St.</p>
+                <p>Las Vegas, NV</p>
+                <a href="menu.html" class="btn">Order</a>
+            </div>
+        </div>
+    </section>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html">About Us</a></li>
-				<li><a href="landing.html">Menu</a></li>
-				<!-- <li><a href="elements.html">Elements</a></li> -->
-			</ul>
-			<ul class="actions stacked">
-				<!-- <li><a href="#" class="button primary fit">Get Started</a></li> -->
-				<li><a href="#" class="button fit">Make a Reservation!</a></li>
-			</ul>
-		</nav>
+    <section class="menu">
+        <div class="menu-card">
+            <img src="" alt="Appetizers">
+            <h3><a href="menu.html#appetizers">Appetizers</a></h3>
+        </div>
+        <div class="menu-card">
+            <img src="" alt="Ramen">
+            <h3><a href="menu.html#ramen">Ramen</a></h3>
+        </div>
+        <div class="menu-card">
+            <img src="" alt="Donburi">
+            <h3><a href="menu.html#donburi">Donburi</a></h3>
+        </div>
+        <div class="menu-card">
+            <img src="" alt="Desserts">
+            <h3><a href="menu.html#desserts">Desserts</a></h3>
+        </div>
+        <div class="menu-card">
+            <img src="" alt="Drinks">
+            <h3><a href="menu.html#Drinks">Drinks</a></h3>
+        </div>
+    </section>
 
-		<!-- Banner -->
-		<section id="banner" class="major">
-			<div class="inner">
-				<header class="major">
-					<h1>Ramen Saitama</h1>
-				</header>
-				<div class="content">
-					<p>Crafting only the best since 2001.</p>
-					<ul class="actions">
-						<li><a href="generic.html" class="button next scrolly">Our Story</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+    <section class="contact">
+        <div class="review-container">
+            <h2>Leave a Review!</h2>
+            <form>
+                <div class="form-section">
+                    <label for="name">Name:</label>
+                    <input type="text" name = "name" required>
+                </div>
+                <div class="form-section">
+                    <label for="name">Email:</label>
+                    <input type="text" name = "name" required>
+                </div>
+                <div class="form-section">
+                    <label for="name">What did you have?:</label>
+                    <input type="text" name = "name" required>
+                </div>
+                <div class="form-section">
+                    <label for="name">Review:</label>
+                    <input type="text" name = "name" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn">Clear</button>
+                </div>
+            </form>
+        </div>
 
-		<!-- Main -->
-		<div id="main">
-			<!-- Two -->
-			<section id="two">
-				<div class="inner">
-					<header class="major">
-						<h2>Order Online Now!</h2>
-						<h3>Choose Your Location</h3>
-					</header>
+        <div class="hours-contact">
+            <div class="hours">
+                <h2>Hours of Operation</h1>
+                <p>Sunday: Closed</p>
+                <p>Monday: 12:00 PM - 10:00 PM</p>
+                <p>Tuesday: 12:00 PM - 10:00 PM</p>
+                <p>Wednesday: 12:00 PM - 10:00 PM</p>
+                <p>Thursday: 12:00 PM - 10:00 PM</p>
+                <p>Friday: 12:00 PM - 2:00 AM</p>
+                <p>Saturday: 12:00 PM - 2:00 AM</p>
+            </div>
 
-					<div id="locationContainer">
-						<div class="location">
-							<h3>Little Tokyo</h3>
-							<span>123 Tokyo St</span>
-							<p>Los Angeles, CA</p>
-							<ul class="actions">
-								<li><a href="landing.html" class="button next">Order</a></li>
-							</ul>
-						</div>
-						<div class="location">
-							<h3>Arcadia</h3>
-							<span>123 Arcadia St</span>
-							<p>Arcadia, CA</p>
-							<ul class="actions">
-								<li><a href="landing.html" class="button next">Order</a></li>
-							</ul>
-						</div>
-						<div class="location">
-							<h3>Las Vegas</h3>
-							<span>123 Vegas St</span>
-							<p>Las Vegas, NV</p>
-							<ul class="actions">
-								<li><a href="landing.html" class="button next">Order</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="contact">
+                <p><strong>Email:</strong>saitamarament@email.com</p>
+                <p><strong>Phone:</strong>(000)000-0000</p>
+                <p><strong>Instagram:</strong>@saitamaramen</p>
+                <p><strong>Facebook:</strong>saitamaramen</p>
+                <p><strong>Address:</strong>1234 Somewhere Rd., Los Angeles, CA 00000</p>
+            </div>
+            
+        </div>
+    </section>
 
-			<!-- One -->
-			<section id="one" class="tiles">
-				<article>
-					<span class="image">
-						<img src="images/appetizers.jpg" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="landing.html#appetizers" class="link">Appetizers</a></h3>
-						<p>Ipsum dolor sit amet</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/ramen.webp" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="landing.html#ramen" class="link">Ramen</a></h3>
-						<p>feugiat amet tempus</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/riceBowls.jpg" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="landing.html#donburi" class="link">Donburi</a></h3>
-						<p>Lorem etiam nullam</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/dessert.webp" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="landing.html#dessertDrink" class="link">Drinks/Desserts</a></h3>
-						<p>Nisl sed aliquam</p>
-					</header>
-				</article>
-				<!-- <article>
-					<span class="image">
-						<img src="images/pic05.jpg" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="landing.html" class="link">Consequat</a></h3>
-						<p>Ipsum dolor sit amet</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/pic06.jpg" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="landing.html" class="link">Etiam</a></h3>
-						<p>Feugiat amet tempus</p>
-					</header>
-				</article> -->
-			</section>
-		</div>
-
-		<!-- Contact -->
-		<section id="contact">
-			<div class="inner">
-				<section>
-					<header class="major">
-						<h2>Leave Us a Review!</h2>
-					</header>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="food">What did you have?</label>
-								<input type="text" name="food" id="food">
-							</div>
-							<div class="field">
-								<label for="review">Review</label>
-								<textarea name="review" id="review" rows="8"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Submit Review" class="primary" /></li>
-							<li><input type="reset" value="Clear" /></li>
-						</ul>
-					</form>
-				</section>
-
-				<section class="split">
-					<section>
-						<header class="major">
-							<h2>Hours of Operation</h2>
-						</header>
-						<p>Sunday: 12:00 PM - 2:00 AM (Next Day) <br> Monday: 12:00 PM - 2:00 AM (Next Day) <br>
-							Tuesday:
-							12:00 PM - 2:00 AM (Next Day) <br> Wednesday: 12:00 PM - 2:00 AM (Next Day) <br> Thursday:
-							12:00
-							PM - 2:00 AM (Next Day) <br> Friday: 12:00 PM - 2:00 AM (Next Day) <br> Saturday: 12:00 PM -
-							2:00 AM (Next Day)
-						</p>
-					</section>
-					<section>
-						<div class="contact-method">
-							<span class="icon solid alt fa-envelope"></span>
-							<a href="#">ramensaitama@untitled.tld</a>
-						</div>
-						<div class="contact-method">
-							<span class="icon solid alt fa-phone"></span>
-							<span>(000)000-0000</span>
-						</div>
-						<div class="contact-method">
-							<span class="icon brands alt fa-instagram"></span>
-							<a href="#">Instagram</a>
-						</div>
-						<div class="contact-method">
-							<span class="icon brands alt fa-facebook-f"></span>
-							<a href="#">Facebook</a>
-						</div>
-						<div class="contact-method">
-							<span class="icon solid alt fa-home"></span>
-							<span>1234 Somewhere Road #5432<br />
-								Los Angeles, CA 00000<br />
-								United States of America</span>
-						</div>
-					</section>
-				</section>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<div>
-					<ul class="copyright">
-						<li>&copy; Brandon Tsai</li>
-						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    <footer>
+        <p>&copy; 2025 Saitama Ramen. Designed by <a href="#">Brandon Tsai</a></p>
+    </footer>
 </body>
-
 </html>
