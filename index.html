@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saitama Ramen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <div class="logo">
             <a href="index.html"><h1>Saitama Ramen</h1></a>
         </div>
         <nav>
-             <!-- <button>☰</button> -->
-              <ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="#">Make a Reservation!</a></li>
-              </ul>
+                <li><a href="#" class="reservation-btn">Make a Reservation!</a></li>
+            </ul>
         </nav>
     </header>
 
     <section class="banner">
-        <div class="section-container">
+        <div class="banner-content">
             <h1>Saitama Ramen</h1>
             <p>Crafting only the best since 2001.</p>
             <a href="about.html" class="btn">Our Story</a>
@@ -31,9 +32,9 @@
     </section>
 
     <section class="locations">
-        <h1>Order Online Now!</h1>
-        <h2>Choose Your Location</h2>
-
+        <h2>Order Online Now!</h2>
+        <h3>Choose Your Location</h3>
+        
         <div class="location-container">
             <div class="location-card">
                 <h3>Little Tokyo</h3>
@@ -41,12 +42,14 @@
                 <p>Los Angeles, CA</p>
                 <a href="menu.html" class="btn">Order</a>
             </div>
+            
             <div class="location-card">
                 <h3>Arcadia</h3>
                 <p>123 Arcadia St.</p>
                 <p>Arcadia, CA</p>
                 <a href="menu.html" class="btn">Order</a>
             </div>
+            
             <div class="location-card">
                 <h3>Las Vegas</h3>
                 <p>123 Vegas St.</p>
@@ -56,81 +59,91 @@
         </div>
     </section>
 
-    <section class="menu">
-        <div class="menu-card">
-            <img src="" alt="Appetizers">
+    <!-- Menu Categories Section -->
+    <section class="menu-categories">
+        <div class="category">
+            <img src="images/appetizers.jpg" alt="Appetizers">
             <h3><a href="menu.html#appetizers">Appetizers</a></h3>
         </div>
-        <div class="menu-card">
-            <img src="" alt="Ramen">
+        
+        <div class="category">
+            <img src="images/ramen.webp" alt="Ramen">
             <h3><a href="menu.html#ramen">Ramen</a></h3>
         </div>
-        <div class="menu-card">
-            <img src="" alt="Donburi">
+        
+        <div class="category">
+            <img src="images/riceBowls.jpg" alt="Rice Bowls">
             <h3><a href="menu.html#donburi">Donburi</a></h3>
         </div>
-        <div class="menu-card">
-            <img src="" alt="Desserts">
-            <h3><a href="menu.html#desserts">Desserts</a></h3>
+        
+        <div class="category">
+            <img src="images/dessert.webp" alt="Desserts">
+            <h3><a href="menu.html#desserts">Drinks/Desserts</a></h3>
         </div>
-        <div class="menu-card">
-            <img src="" alt="Drinks">
-            <h3><a href="menu.html#Drinks">Drinks</a></h3>
+
+        <div class="category">
+            <img src="images/japaneseDrinks.jpg" alt="Drinks">
+            <h3><a href="menu.html#desserts">Drinks/Desserts</a></h3>
         </div>
     </section>
 
-    <section class="contact">
-        <div class="review-container">
+    <section class="review-section">
+        <div class="review-form">
             <h2>Leave a Review!</h2>
-            <form>
-                <div class="form-section">
+            <form id="reviewForm">
+                <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" name = "name" required>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="form-section">
-                    <label for="name">Email:</label>
-                    <input type="text" name = "name" required>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="form-section">
-                    <label for="name">What did you have?:</label>
-                    <input type="text" name = "name" required>
+                
+                <div class="form-group">
+                    <label for="food">What did you have?</label>
+                    <input type="text" id="food" name="food" required>
                 </div>
-                <div class="form-section">
-                    <label for="name">Review:</label>
-                    <input type="text" name = "name" required>
+                
+                <div class="form-group">
+                    <label for="review">Review:</label>
+                    <textarea id="review" name="review" rows="6" required></textarea>
                 </div>
+                
                 <div class="form-buttons">
                     <button type="submit" class="btn">Submit</button>
-                    <button type="reset" class="btn">Clear</button>
+                    <button type="reset" class="btn btn-secondary">Clear</button>
                 </div>
             </form>
         </div>
-
+        
         <div class="hours-contact">
             <div class="hours">
-                <h2>Hours of Operation</h1>
-                <p>Sunday: Closed</p>
+                <h2>Hours of Operation</h2>
                 <p>Monday: 12:00 PM - 10:00 PM</p>
                 <p>Tuesday: 12:00 PM - 10:00 PM</p>
                 <p>Wednesday: 12:00 PM - 10:00 PM</p>
                 <p>Thursday: 12:00 PM - 10:00 PM</p>
                 <p>Friday: 12:00 PM - 2:00 AM</p>
                 <p>Saturday: 12:00 PM - 2:00 AM</p>
-            </div>
-
-            <div class="contact">
-                <p><strong>Email:</strong>saitamaramen@email.com</p>
-                <p><strong>Phone:</strong>(000)000-0000</p>
-                <p><strong>Instagram: </strong>@saitamaramen</p>
-                <p><strong>Facebook: </strong>saitamaramen</p>
-                <p><strong>Address: </strong>1234 Somewhere Rd., Los Angeles, CA 00000</p>
+                <p>Sunday: Closed</p>
             </div>
             
+            <div class="contact">
+                <p><strong>Email:</strong> saitamaramen@email.com</p>
+                <p><strong>Phone:</strong> (000)000-0000</p>
+                <p><strong>Instagram:</strong> <a href="#">@saitamaramen</a></p>
+                <p><strong>Facebook:</strong> <a href="#">@saitamaramen</a></p>
+                <p><strong>Address:</strong> 1234 Somewhere Road #5432, Los Angeles, CA 00000</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Saitama Ramen. Designed by <a href="#">Brandon Tsai</a></p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
