@@ -4,175 +4,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saitama Ramen - Menu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <div class="logo">
             <a href="index.html"><h1>Saitama Ramen</h1></a>
         </div>
         <nav>
-             <!-- <button>☰</button> -->
-              <ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="#">Make a Reservation!</a></li>
-              </ul>
+                <li><a href="#" class="reservation-btn">Make a Reservation!</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="banner">
+    <section class="menu-banner">
         <h1>Our Menu</h1>
-        <p>Explore our authentic Japanese cuisine.</p>
+        <p>Explore our authentic Japanese cuisine</p>
     </section>
+
 
     <div class="menu-nav">
-            <a href="#appetizers">Appetizers</a>
-            <a href="#ramen">Ramen</a>
-            <a href="#donburi">Donburi</a>
-            <a href="#desserts">Desserts</a>
-            <a href="#drinks">Drinks</a>
+        <a href="#appetizers">Appetizers</a>
+        <a href="#ramen">Ramen</a>
+        <a href="#donburi">Donburi</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
     </div>
 
-    <section id="appetizers" class="menu-container">
+    <section id="appetizers" class="menu-section">
         <h2>Appetizers</h2>
-        <p>Start your meal with some delicous Japanese appetizers</p>
+        <p>Start your meal with our delicious Japanese appetizers</p>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/edamame.jpg" alt="Edamame">
+                <div class="item-details">
+                    <h3>Edamame</h3>
+                    <p>Steamed young soybeans lightly seasoned with sea salt.</p>
+                    <span class="price">$5.95</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/gyoza.jpg" alt="Gyoza">
+                <div class="item-details">
+                    <h3>Gyoza</h3>
+                    <p>Pan-fried pork and vegetable dumplings, served with dipping sauce (6 pieces).</p>
+                    <span class="price">$8.95</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/chickenKarage.jpg" alt="Chicken Karaage">
+                <div class="item-details">
+                    <h3>Chicken Karaage</h3>
+                    <p>Japanese-style fried chicken marinated in soy, ginger, and garlic.</p>
+                    <span class="price">$9.95</span>
+                </div>
+            </div>
 
-        <div class="menu-container">
-            <div class="menu-card">
-                <img src="" alt="Edamame">
-                <h3>Edamame</h3>
-                <p>Steamed soybeans lightly seasoned with salt.</p>
-                <span class="price">$5.95</span>
-            </div>
-            <div class="menu-card">
-                <img src="" alt="Gyoza">
-                <h3>Gyoza</h3>
-                <p>Pan-fried pork and vegetable dumplings, served with dipping sauce (6 pieces).</p>
-                <span class="price">$8.95</span>
-            </div>
-            <div class="menu-card">
-                <img src="" alt="Chicken Karaage">
-                <h3>Chicken Karaage</h3>
-                <p>Japanese-style fried chicken marinated in soy, ginger, and garlic.</p>
-                <span class="price">$9.95</span>
+            <div class="menu-item">
+                <img src="images/takoyaki.png" alt="Takoyaki">
+                <div class="item-details">
+                    <h3>Takoyaki</h3>
+                    <p>Octopus-filled battered balls topped with bonito flakes, green onions, and our special sauce.</p>
+                    <span class="price">$9.95</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="ramen" class="menu-container">
+    <section id="ramen" class="menu-section">
         <h2>Ramen</h2>
         <p>Our signature ramen bowls, made with handcrafted broths and fresh noodles</p>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/shioRamen.jpg" alt="Shio Ramen">
+                <div class="item-details">
+                    <h3>Shio Ramen</h3>
+                    <p>Classic salt-based chicken broth with chashu pork, bamboo shoots, green onions, and a soft-boiled egg.</p>
+                    <span class="price">$14.95</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/shoyuRamen.jpg" alt="Shoyu Ramen">
+                <div class="item-details">
+                    <h3>Shoyu Ramen</h3>
+                    <p>Soy sauce flavored broth with chashu pork, bamboo shoots, green onions, and a soft-boiled egg.</p>
+                    <span class="price">$15.95</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/tonkatsuRamen.jpg" alt="Tonkotsu Ramen">
+                <div class="item-details">
+                    <h3>Tonkotsu Ramen</h3>
+                    <p>Rich pork bone broth simmered for 24 hours with chashu pork, bamboo shoots, green onions, and a soft-boiled egg.</p>
+                    <span class="price">$16.95</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/misoRamen.webp" alt="Miso Ramen">
+                <div class="item-details">
+                    <h3>Miso Ramen</h3>
+                    <p>Miso-based broth with chashu pork, corn, butter, bamboo shoots, green onions, and a soft-boiled egg.</p>
+                    <span class="price">$15.95</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/vegetarianRamen.jpg" alt="Vegetarian Ramen">
+                <div class="item-details">
+                    <h3>Vegetarian Ramen</h3>
+                    <p>Vegetable broth with tofu, corn, mushrooms, bamboo shoots, and green onions.</p>
+                    <span class="price">$14.95</span>
+                </div>
+            </div>
 
-        <div class="menu-container">
-            <div class="menu-card">
-                <img src="" alt="Shio Ramen">
-                <h3>Shio Ramen</h3>
-                <p>
-                    Classic salt-based chicken broth with chashu pork, bamboo shoots, green onions, and a soft-boiled egg.
-                </p>
-                <span class="price">$14.95</span>
-            </div>
-            <div class="menu-card">
-                <img src="" alt="Shoyu Ramen">
-                <h3>Shoyu Ramen</h3>
-                <p>
-                    Soy sauce flavored broth with chashu pork, bamboo shoots, green onions, and a soft-boiled egg.
-                </p>
-                <span class="price">$15.95</span>
-            </div>
-            <div class="menu-card">
-                <img src="" alt="Tonkatsu Ramen">
-                <h3>Tonkatsu Ramen</h3>
-                <p>
-                    Rich pork bone broth simmered for 24 hours with chashu pork, bamboo shoots, green onions, and a soft-boiled egg.
-                </p>
-                <span class="price">$16.95</span>
-            </div>
-            <div class="menu-card">
-                <img src="" alt="Miso Ramen">
-                <h3>Miso Ramen</h3>
-                <p>
-                    Miso-based broth with chashu pork, corn, butter, bamboo shoots, green onions, and a soft-boiled egg.
-                </p>
-                <span class="price">$15.95</span>
-            </div>
-            <div class="menu-card">
-                <img src="" alt="Vegetarian Ramen">
-                <h3>Vegetarian Ramen</h3>
-                <p>
-                    Vegetable broth with tofu, corn, mushrooms, bamboo shoots, and green onions.
-                </p>
-                <span class="price">$14.95</span>
+            <div class="menu-item">
+                <img src="images/tsukemen.jpg" alt="Tsukemen">
+                <div class="item-details">
+                    <h3>Tsukemen</h3>
+                    <p>Cold noodles served with a separate bowl of concentrated dipping broth. Includes chashu pork, bamboo shoots, and green onions.</p>
+                    <span class="price">$14.95</span>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="donburi" class="menu-container">
-        <h2>Donburi</h2>
+
+    <section id="donburi" class="menu-section">
+        <h2>Donburi (Rice Bowls)</h2>
         <p>Traditional Japanese rice bowls topped with your choice of protein</p>
-
-        <div class="menu-container">
-            <div class="menu-card">
-                <img src="" alt="Chasu Don">
-                <h3>Chasu Don</h3>
-                <p>Steamed rice topped with braised pork chashu, green onions, and a soft-boiled egg.</p>
-                <span class="price">$13.95</span>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/chashuDon.jpg" alt="Chashu Don">
+                <div class="item-details">
+                    <h3>Chashu Don</h3>
+                    <p>Steamed rice topped with braised pork chashu, green onions, and a soft-boiled egg.</p>
+                    <span class="price">$13.95</span>
+                </div>
             </div>
-            <div class="menu-card">
-                <img src="" alt="Spicy Tuna Don">
-                <h3>Spicy Tuna Don</h3>
-                <p>Steamed rice topped with spicy tuna, avocado, cucumber, and seaweed.</p>
-                <span class="price">$15.95</span>
+            
+            <div class="menu-item">
+                <img src="images/spicyTunaDon.jpg" alt="Spicy Tuna Don">
+                <div class="item-details">
+                    <h3>Spicy Tuna Don</h3>
+                    <p>Steamed rice topped with spicy tuna, avocado, cucumber, and seaweed.</p>
+                    <span class="price">$15.95</span>
+                </div>
             </div>
-            <div class="menu-card">
-                <img src="" alt="Salmon Ikura Don">
-                <h3>Salmon Ikura Don</h3>
-                <p>
-                    Steamed rice topped with fresh salmon, salmon roe, avocado, and cucumber.
-                </p>
-                <span class="price">$18.95</span>
+            
+            <div class="menu-item">
+                <img src="images/salmonIkuraDon.jpg" alt="Salmon Ikura Don">
+                <div class="item-details">
+                    <h3>Salmon Ikura Don</h3>
+                    <p>Steamed rice topped with fresh salmon, salmon roe, avocado, and cucumber.</p>
+                    <span class="price">$18.95</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="desserts" class="menu-container">
+    <section id="desserts" class="menu-section">
         <h2>Desserts</h2>
-        <p>There's always room for dessert</p>
+        <p>Complete your meal with our selection of desserts.</p>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/dessert.webp" alt="Mochi Ice Cream">
+                <div class="item-details">
+                    <h3>Mochi Ice Cream</h3>
+                    <p>Japanese rice cake filled with ice cream. Available in green tea, mango, and strawberry flavors.</p>
+                    <span class="price">$5.95</span>
+                </div>
+            </div>
 
-        <div class="menu-card">
-            <img src="" alt="Mochi Ice Cream">
-            <h3>Mochi Ice Cream</h3>
-            <p>
-                Japanese rice cake filled with ice cream. Available in green tea, mango, and strawberry flavors.
-            </p>
-            <span class="price">$5.95</span>
+            <div class="menu-item">
+                <img src="images/iceCreamSandwich.jpg" alt="Mochi Ice Cream Sandwich">
+                <div class="item-details">
+                    <h3>Mochi Ice Cream Sandwich</h3>
+                    <p>Vanilla ice cream sandwiched between two soft, chewy mochi buns.</p>
+                    <span class="price">$5.95</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="drinks" class="menu-container">
+    <section id="drinks" class="menu-section">
         <h2>Drinks</h2>
-        <p>Complete your meal with our selection of drinks</p>
-
-        <div class="menu-container">
-            <div class="menu-card">
-                <img src="" alt="Japanese Green Tea">
-                <h3>Japanese Green Tea</h3>
-                <p>Traditional hot Japanese green tea.</p>
-                <span class="price">$3.50</span>
+        <p>Thirsty? Check out our beverages!</p>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/greenTea.webp" alt="Japanese Green Tea">
+                <div class="item-details">
+                    <h3>Japanese Green Tea</h3>
+                    <p>Traditional hot Japanese green tea.</p>
+                    <span class="price">$2.50</span>
+                </div>
             </div>
-            <div class="menu-card">
-                <img src="" alt="Ramune">
-                <h3>Ramune</h3>
-                <p>Japanese marble soda available in original, strawberry, and melon flavors.</p>
-                <span class="price">$4.50</span>
+
+            <div class="menu-item">
+                <img src="images/oolongTea.webp" alt="Japanese Oolong Tea">
+                <div class="item-details">
+                    <h3>Japanese Oolong Tea</h3>
+                    <p>Traditional hot Japanese oolong tea, known for its rich, semi-oxidized flavor.</p>
+                    <span class="price">$3.50</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="images/ramune.jpg" alt="Ramune Soda">
+                <div class="item-details">
+                    <h3>Ramune Soda</h3>
+                    <p>Japanese marble soda available in original, strawberry, and melon flavors.</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/calpico.png" alt="Calpico">
+                <div class="item-details">
+                    <h3>Calpico</h3>
+                    <p>Refreshing Japanese soft drink with a unique milky, slightly tangy taste.</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/asahi.jpg" alt="Asahi Beer Small/Large">
+                <div class="item-details">
+                    <h3>Asahi Beer S/L</h3>
+                    <p>Premium Japanese lager beer, crisp and refreshing with a clean finish.</p>
+                    <span class="price">$6.50 / $8.75</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/sapporo.png" alt="Sapporo beer Small/Large">
+                <div class="item-details">
+                    <h3>Sapporo Beer S/L</h3>
+                    <p>Classic Japanese beer with a smooth, malty flavor and light hop character.</p>
+                    <span class="price">$6.50 / $8.75</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/hiBall.jpg" alt="Lemon High Ball">
+                <div class="item-details">
+                    <h3>Lemon Hi-Ball</h3>
+                    <p>Japanese highball cocktail made with whiskey, soda water, and fresh lemon.</p>
+                    <span class="price">$7.00</span>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-content">
             <div class="contact-info">
                 <p><strong>Email:</strong> saitamaramen@email.com</p>
                 <p><strong>Phone:</strong> (000)000-0000</p>
@@ -182,11 +281,14 @@
             <div class="social-links">
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
+            </div>
         </div>
-
-        <div class="copyright-container">
-            <p>&copy; 2023 Ramen Saitama. All rights reserved.</p>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Saitama Ramen. Designed by <a href="#">Brandon Tsai</a></p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
